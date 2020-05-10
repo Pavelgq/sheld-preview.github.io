@@ -22,15 +22,16 @@
 
             <!-- <span>Выбор оптимальной схемы заземления</span> -->
           </p>
+          <button class="header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         </header>
 
         <nav class="main-nav">
-          <ul class="main-nav__list">
+          <ul class="main-nav__list main-nav__list--top">
             <li class="main-nav__item main-nav__category">
               <div class="main-nav__group">
                 <svg width="27" height="35" class="main-nav__icon main-nav__icon--data">
                   <title>Исходные данные</title>
-                  <use xlink:href="/sheld-preview.github.io/img/svg/sprite.svg#svg--data"></use>
+                  <use xlink:href="./img/svg/sprite.svg#svg--data"></use>
                 </svg>
                 <h3 class="main-nav__title">Исходные данные</h3>
                 <div class="main-nav__arrow nav-arrow open">
@@ -69,7 +70,7 @@
               <div class="main-nav__group">
                 <svg width="35" height="49" class="main-nav__icon main-nav__icon--result">
                   <title>Результаты расчетов</title>
-                  <use xlink:href="/sheld-preview.github.io/img/svg/sprite.svg#svg--result"></use>
+                  <use xlink:href="./img/svg/sprite.svg#svg--result"></use>
                 </svg>
                 <h3 class="main-nav__title">Результаты расчетов</h3>
                 <div class="main-nav__arrow nav-arrow">
@@ -120,7 +121,7 @@
               <button class="setting__button setting__button--set"></button>
               <svg width="35" height="49" class="setting__icon setting__icon--set">
                 <title>Настройки</title>
-                <use xlink:href="/sheld-preview.github.io/img/svg/sprite.svg#svg--setting"></use>
+                <use xlink:href="./img/svg/sprite.svg#svg--setting"></use>
 
               </svg>
 
@@ -129,7 +130,7 @@
               <button class="setting__button setting__button--key"> </button>
               <svg width="35" height="49" class="setting__icon setting__icon--key">
                 <title>Активация</title>
-                <use xlink:href="/sheld-preview.github.io/img/svg/sprite.svg#svg--key"></use>
+                <use xlink:href="./img/svg/sprite.svg#svg--key"></use>
 
               </svg>
 
@@ -146,7 +147,7 @@
           <button class="content__calc-all" title="Выполнить расчет">
             <svg width="35" height="49" class="content__calc-icon">
               <title>Выполнить расчет</title>
-              <use xlink:href="/sheld-preview.github.io/img/svg/sprite.svg#svg--calc"></use>
+              <use xlink:href="./img/svg/sprite.svg#svg--calc"></use>
             </svg>
             <span>Выполнить расчет</span>
           </button>
@@ -156,7 +157,7 @@
               <button class="content__button"></button>
               <svg width="35" height="49" class="content__icon content__icon--save">
                 <title>Сохранение</title>
-                <use xlink:href="/sheld-preview.github.io/img/svg/sprite.svg#svg--save"></use>
+                <use xlink:href="./img/svg/sprite.svg#svg--save"></use>
 
               </svg>
               </>
@@ -164,15 +165,14 @@
               <button class="content__button"></button>
               <svg width="35" height="49" class="content__icon content__icon--load">
                 <title>Загрузка</title>
-                <use xlink:href="/sheld-preview.github.io/img/svg/sprite.svg#svg--load"></use>
-
+                <use xlink:href="./img/svg/sprite.svg#svg--load"></use>
               </svg>
             </li>
             <li class="content__item">
               <button class="content__button"></button>
               <svg width="35" height="49" class="content__icon content__icon--print">
                 <title>Печать результатов</title>
-                <use xlink:href="/sheld-preview.github.io/img/svg/sprite.svg#svg--print"></use>
+                <use xlink:href="./img/svg/sprite.svg#svg--print"></use>
 
               </svg>
             </li>
@@ -181,13 +181,13 @@
         <div class="content__arrow content__arrow--prev">
           <svg width="35" height="49" class="content__dir content__dir--prev">
             <title>Предыдущая страница</title>
-            <use xlink:href="/sheld-preview.github.io/img/svg/sprite.svg#svg--prev"></use>
+            <use xlink:href="./img/svg/sprite.svg#svg--prev"></use>
           </svg>
         </div>
         <div class="content__arrow content__arrow--next">
           <svg width="35" height="49" class="content__dir content__dir--next">
             <title>Следующая страница</title>
-            <use xlink:href="/sheld-preview.github.io/img/svg/sprite.svg#svg--next"></use>
+            <use xlink:href="./img/svg/sprite.svg#svg--next"></use>
           </svg>
         </div>
         <div class="content__wrapper">
@@ -196,7 +196,7 @@
             <button class="calc-form__clear" title="Очистить введенные данные">
               <svg width="35" height="49" class="calc-form__basket">
                 <title>Очистить введенные данные</title>
-                <use xlink:href="/sheld-preview.github.io/img/svg/sprite.svg#svg--recycling"></use>
+                <use xlink:href="./img/svg/sprite.svg#svg--recycling"></use>
               </svg>
             </button>
 
@@ -218,7 +218,7 @@
               <ul class="calc-form__list calc-form__list--inline">
                 <li class="calc-form__item calc-form__item--inline">
                   <fieldset class="calc-form__block">
-                    <legend class="calc-form__legend">Материал жилы: </legend>
+                    <legend class="calc-form__legend">Параметры жилы: </legend>
                     <ul class="calc-form__list calc-form__list">
                       <li class="calc-form__item calc-form__item">
                         <input type="radio" name="cable__MaterialG" id="cableCoreAl" class="visually-hidden calc-form__input--radio">
@@ -244,7 +244,7 @@
                 </li>
                 <li class="calc-form__item calc-form__item--inline">
                   <fieldset class="calc-form__block">
-                    <legend class="calc-form__legend">Материал экрана: </legend>
+                    <legend class="calc-form__legend">Параметры экрана: </legend>
                     <ul class="calc-form__list calc-form__list">
                       <li class="calc-form__item calc-form__item">
                         <input type="radio" name="cable__MaterialE" id="cableEcranAl" class="visually-hidden calc-form__input--radio">
@@ -384,7 +384,7 @@
       </main>
     </div>
   </div>
-  <script src="/js/action.js"></script>
+  <script src="/js/all.min.js"></script>
 </body>
 
 </html>

@@ -22,3 +22,36 @@ result.addEventListener("click", function(event) {
   subResult.classList.toggle('close');
 });
 
+var viewportWidth = document.body.clientWidth;
+
+var mobileWidth = 480;
+var tabletWidth = 768;
+
+var titleMenu = document.querySelectorAll('.main-nav__title')
+var subMenu = document.querySelectorAll('.sub');
+
+if (viewportWidth <= tabletWidth) {
+  subMenu.forEach(function (list) {
+    list.classList.add('visually-hidden');
+  });
+  titleMenu.forEach(function (list) {
+    list.classList.add('visually-hidden');
+  });
+}
+else{ 
+  subMenu.forEach(function (list) {
+    list.classList.remove('visually-hidden');
+  });
+  titleMenu.forEach(function (list) {
+    list.classList.remove('visually-hidden');
+  });
+};
+
+if (viewportWidth <= mobileWidth) {
+  subMenu.forEach(function (list) {
+    list.classList.remove('visually-hidden');
+  });
+  titleMenu.forEach(function (list) {
+    list.classList.remove('visually-hidden');
+  });
+};
