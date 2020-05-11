@@ -11,379 +11,538 @@
 
 <body class="page">
   <h1 class="visually-hidden">Программа Экран</h1>
-  
-  <div class="app-wraper">
-    <div class="wrapper">
-      <div class="wrapper--unity page__left-panel">
-        <header class="header">
-          <p class="header__logo">
-            <span>Программа</span>
-            <span>ЭКРАН</span>
-
-            <!-- <span>Выбор оптимальной схемы заземления</span> -->
-          </p>
-          <button class="header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        </header>
-
-        <nav class="main-nav">
-          <ul class="main-nav__list main-nav__list--top">
-            <li class="main-nav__item main-nav__category">
-              <div class="main-nav__group">
-                <svg width="27" height="35" class="main-nav__icon main-nav__icon--data">
-                  <title>Исходные данные</title>
-                  <use xlink:href="./img/svg/sprite.svg#svg--data"></use>
-                </svg>
-                <h3 class="main-nav__title">Исходные данные</h3>
-                <div class="main-nav__arrow nav-arrow open">
-                  <span class="nav-arrow--left"></span>
-                  <span class="nav-arrow--right"></span>
-                </div>
-              </div>
-              <ul class="main-nav__list main-nav__list--sub sub">
-                <li class=" main-nav__item sub__item ">
-                  <button type="submit" class="sub__button button button--menu">
-                    <span>01</span>
-                    <span>Сеть</span>
-                  </button>
-                </li>
-                <li class="main-nav__item sub__item sub__item--active">
-                  <button type="submit" class="sub__button button button--menu">
-                    <span>02</span>
-                    <span>Кабель</span>
-                  </button>
-                </li>
-                <li class="main-nav__item sub__item">
-                  <button type="submit" class="sub__button button button--menu">
-                    <span>03</span>
-                    <span>Трасса</span>
-                  </button>
-                </li>
-                <li class="main-nav__item sub__item">
-                  <button type="submit" class="sub__button button button--menu">
-                    <span>04</span>
-                    <span>Настройки</span>
-                  </button>
-                </li>
-              </ul>
-            </li>
-            <li class="main-nav__item main-nav__category">
-              <div class="main-nav__group">
-                <svg width="35" height="49" class="main-nav__icon main-nav__icon--result">
-                  <title>Результаты расчетов</title>
-                  <use xlink:href="./img/svg/sprite.svg#svg--result"></use>
-                </svg>
-                <h3 class="main-nav__title">Результаты расчетов</h3>
-                <div class="main-nav__arrow nav-arrow">
-                  <span class="nav-arrow--left"></span>
-                  <span class="nav-arrow--right"></span>
-                </div>
-              </div>
-              <ul class="main-nav__list main-nav__list--sub sub close">
-                <li class="main-nav__item sub__item">
-                  <button type="submit" class="sub__button button button--menu">
-                    <span>01</span>
-                    <span>Двустороннее заземление</span>
-                  </button>
-                </li>
-                <li class="main-nav__item sub__item">
-                  <button type="submit" class="sub__button button button--menu">
-                    <span>02</span>
-                    <span>Одностороннее заземление</span>
-
-                  </button>
-                </li>
-                <li class="main-nav__item sub__item">
-                  <button type="submit" class="sub__button button button--menu">
-                    <span>03</span>
-                    <span>Идеальная транспозиция</span>
-                  </button>
-                </li>
-                <li class="main-nav__item sub__item">
-                  <button type="submit" class="sub__button button button--menu">
-                    <span>04</span>
-                    <span>Неидеальная транспозиция</span>
-
-                  </button>
-                </li>
-                <li class="main-nav__item sub__item">
-                  <button type="submit" class="sub__button button button--menu">
-                    <span>05</span>
-                    <span>Параметры кабельной линии</span>
-
-                  </button>
-                </li>
-              </ul>
-            </li>
-          </ul>
-
-          <ul class="main-nav__setting setting">
-            <li class="setting__item">
-              <button class="setting__button setting__button--set"></button>
-              <svg width="35" height="49" class="setting__icon setting__icon--set">
-                <title>Настройки</title>
-                <use xlink:href="./img/svg/sprite.svg#svg--setting"></use>
-
-              </svg>
-
-            </li>
-            <li class="setting__item">
-              <button class="setting__button setting__button--key"> </button>
-              <svg width="35" height="49" class="setting__icon setting__icon--key">
-                <title>Активация</title>
-                <use xlink:href="./img/svg/sprite.svg#svg--key"></use>
-
-              </svg>
+  <header class="header header--dark wrapper" style="">
 
 
-            </li>
-          </ul>
-        </nav>
+    <div class="header__wrapper wrapper-inner">
+      <a class="header__logo aos-init aos-animate" data-aos="fade-zoom-in" href="https://energotek.ru/" data-aos-easing="ease-in-out" data-aos-duration="1000" data-aos-delay="1500">
+
+        <div id="js__logo-dark">
+          <svg width="100" height="42">
+            <use xlink:href="./img/svg/sprite.svg#svg--logo-dark">
+            </use>
+          </svg> </div>
+        <div id="js__logo-header" style="display:none;">
+          <svg width="100" height="42" version="1.1" id="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 259.8 47.2" style="enable-background:new 0 0 259.8 47.2;" xml:space="preserve">
+            <g id="XMLID_5652_">
+              <g id="XMLID_15_">
+                <path id="XMLID_5724_" d="M71.1,37.5c4.9,0,8.9-3,8.9-9.5V16.2c0-6.4-2.3-9.7-8.7-9.7h-10c-1.7,0-2.5,1-2.5,2.7s0.8,2.7,2.5,2.7
+			h9.5c2.7,0,3.6,1.6,3.6,4.1v2.4H65c-1.8,0-2.7,0.8-2.7,2.7c0,2.1,0.9,2.8,2.7,2.8h9.4v4.2c0,2.5-1.3,4-3.6,4h-9.5
+			c-1.7,0-2.5,1-2.5,2.7s0.8,2.7,2.5,2.7H71.1z"></path>
+                <path id="XMLID_47_" d="M186.3,15.9h-2.9c-5.1,0-8.7,2.9-8.7,8.6V29c0,5.7,3.8,8.4,8.6,8.4h3.1c4.8,0,8.6-2.7,8.6-8.4v-4.6
+			C195,18.8,191.4,15.9,186.3,15.9z M189.4,29.2c0,1.9-0.9,3.3-3.4,3.3h-2.3c-2.5,0-3.4-1.3-3.4-3.3v-4.8c0-2.2,1-3.5,3.5-3.5h2.2
+			c2.5,0,3.5,1.3,3.5,3.5v4.8H189.4z"></path>
+                <path id="XMLID_5721_" d="M161.3,21.2h9.4c1.8,0,2.6-1,2.6-2.6c0-1.7-0.9-2.7-2.6-2.7h-12.1c-1.9,0-2.8,0.9-2.8,2.7v16.3
+			c0,1.9,0.9,2.6,2.8,2.6c1.8,0,2.7-0.7,2.7-2.6L161.3,21.2L161.3,21.2z"></path>
+                <path id="XMLID_7708_" d="M142.9,15.8H134c-1.9,0-2.7,1.7-2.7,2.9v26.5c0,1.1,1.1,2,2.8,2c1.9,0,2.7-1,2.7-2v-7.7h6.3
+			c5.1,0,8.7-2.9,8.7-8.6v-4.6C151.8,18.7,148,15.8,142.9,15.8z M146.2,28.8c0,2.2-1,3.5-3.5,3.5h-5.9V21.2h6c2.5,0,3.4,1.3,3.4,3.3
+			V28.8z"></path>
+                <path id="XMLID_50_" d="M118.8,15.8h-2.2c-5,0-8.8,3.2-8.8,8.7v4.6c0,5.3,3.6,8.3,8.6,8.3h6.8c1.1,0,2.3-0.9,2.3-2.6
+			c0-1.8-1.2-2.6-2.3-2.6H117c-2.2,0-3.7-1-3.7-2.8v-0.3h11.2c2.3,0,3-1.8,3-2.8v-1.8C127.6,18.9,123.7,15.8,118.8,15.8z M122,24.8
+			h-8.6v-0.3c0-2.1,1.4-3.4,3.4-3.4h1.7c2.3,0,3.5,1.3,3.5,3.4V24.8z"></path>
+                <path id="XMLID_5716_" d="M101.1,37.5c1.9,0,2.8-0.7,2.8-2.6V18.4c0-1.7-0.9-2.5-2.8-2.5c-1.8,0-2.7,0.8-2.7,2.5v5.5H90v-5.5
+			c0-1.7-0.9-2.5-2.8-2.5s-2.8,0.8-2.8,2.5v16.4c0,1.9,0.9,2.6,2.8,2.6s2.8-0.7,2.8-2.6v-5.9h8.4v5.9
+			C98.4,36.7,99.3,37.5,101.1,37.5"></path>
+              </g>
+              <g id="XMLID_16_">
+                <path id="XMLID_5725_" style="fill:#ED1C24;" d="M20.1,22c0,0.8-0.2,1.6-0.4,2c-0.4,0.8-0.7,1.2-1.2,1.4c-0.5,0.3-1.3,0.4-2.7,0.4
+			H4.5c-1.4,0-2.2-0.1-2.7-0.4C1.4,25.1,1,24.7,0.7,24c-0.2-0.4-0.4-1.2-0.4-2s0.2-1.6,0.4-2c0.4-0.8,0.7-1.2,1.2-1.4
+			c0.5-0.3,1.3-0.4,2.7-0.4h11.3c1.4,0,2.2,0.1,2.7,0.4s0.8,0.7,1.2,1.4C19.9,20.4,20.1,21.1,20.1,22 M9.3,37.3
+			c4.1,4.2,9.9,6.7,16.2,6.5c11.2-0.3,20.5-9.3,21.1-20.5c0.8-12.7-9.3-23.2-21.8-23.2c-6.1,0-11.6,2.5-15.6,6.5
+			c-1.7,1.7-1.7,4.6,0,6.3s4.6,1.7,6.3,0c2.4-2.5,5.6-3.8,9.1-3.9c2.2,0,5.2,0.8,7.2,1.8c1,0.5,3.5,2,4.7,3.3c0,0,0,0,0,0.1
+			c0.9,1,0.2,2.5-1.1,2.5h-4.8c-2.7,0-3,0.3-3.8,1.8c-1.2,2.1-1.2,4.8,0,6.9c0.9,1.5,1.2,1.8,3.8,1.8h4.8c1.3,0,2,1.5,1.1,2.5l0,0
+			c-1.2,1.3-3.6,2.8-4.7,3.3c-2,1-5,1.8-7.2,1.8c-3.4,0-6.7-1.4-9.1-3.9c-1.7-1.7-4.6-1.7-6.3,0C7.6,32.7,7.6,35.6,9.3,37.3"></path>
+                <path id="XMLID_5656_" style="fill:#ED1C24;" d="M214.1,21.2c1.7,0,2.5-1,2.5-2.7s-0.9-2.7-2.5-2.7h-14.4c-1.7,0-2.5,1-2.5,2.7
+			s0.8,2.7,2.5,2.7h4.5v13.7c0,1.8,0.9,2.6,2.7,2.6c1.9,0,2.8-0.8,2.8-2.6V21.2H214.1z"></path>
+                <path id="XMLID_5655_" style="fill:#ED1C24;" d="M258.9,19c0.1-0.3,0.1-0.5,0.1-0.7c0-1.5-1.2-2.4-3-2.5c-1.8-0.1-2.2,1-2.7,2.1
+			l-0.9,2.8c-0.9,2.4-2,2.9-3.9,2.9h-2.8v-5.1c0-1.7-0.6-2.7-2.7-2.7c-2.1,0-2.8,1.1-2.8,2.7v16.1c0,2,1,2.8,2.7,2.8
+			c2,0,2.8-0.9,2.8-2.9v-6.1h2.9c2.1,0,3.4,0.5,4.3,3.1l1.2,3.6c0.4,1.1,0.8,2.3,2.6,2.3c1.8,0,3.1-0.8,3.1-2.3c0-0.2,0-0.5-0.1-0.7
+			l-1.4-4.1c-0.7-2.1-1.5-3.6-3.7-4.3c1.8-0.7,2.5-2,3.3-4L258.9,19z"></path>
+                <path id="XMLID_5654_" style="fill:#ED1C24;" d="M227.4,37.5c5.3,0,8.9-2.7,8.9-8.4v-4.6c0-5.7-3.6-8.6-8.7-8.6H221
+			c-1.1,0-2.3,1-2.3,2.7c0,1.8,1.2,2.7,2.3,2.7h6.2c2.4,0,3.4,1.1,3.5,3.2h-6.8c-1.7,0-2.6,0.7-2.6,2.3c0,1.8,1,2.3,2.6,2.3h6.8
+			c-0.1,1.8-1,3.4-3.4,3.4h-6.5c-1,0-2.3,0.8-2.3,2.6c0,1.7,1.2,2.6,2.3,2.6h6.6V37.5z"></path>
+              </g>
+            </g>
+          </svg> </div>
+      </a>
+      <nav class="header__nav">
+        <a class="header__nav-link aos-init aos-animate" href="/about/" data-aos="fade-zoom-in" data-aos-easing="ease-in-out" data-aos-duration="1000" data-aos-delay="1650">О компании</a>
+        <a class="header__nav-link aos-init aos-animate" href="/catalog/" data-aos="fade-zoom-in" data-aos-easing="ease-in-out" data-aos-duration="1000" data-aos-delay="1800">Каталог</a>
+        <a class="header__nav-link aos-init aos-animate" href="/portfolio/" data-aos="fade-zoom-in" data-aos-easing="ease-in-out" data-aos-duration="1000" data-aos-delay="1950">Проекты</a>
+        <a class="header__nav-link aos-init aos-animate" href="/news/" data-aos="fade-zoom-in" data-aos-easing="ease-in-out" data-aos-duration="1000" data-aos-delay="2100">Новости</a>
+        <a class="header__nav-link aos-init aos-animate" href="/info/proektirovshchikam/programma-truba/" data-aos="fade-zoom-in" data-aos-easing="ease-in-out" data-aos-duration="1000" data-aos-delay="2250">Проектировщикам</a>
+        <a class="header__nav-link aos-init aos-animate" href="/contacts/" data-aos="fade-zoom-in" data-aos-easing="ease-in-out" data-aos-duration="1000" data-aos-delay="2400">Контакты</a>
+      </nav>
+      <div class="header__contacts">
+        <a class="header__phone aos-init aos-animate" href="tel:88005559546" data-aos="fade-zoom-in" data-aos-easing="ease-in-out" data-aos-duration="1000" data-aos-delay="2400">8 800 555 95 46</a>
+        <a class="header__email aos-init aos-animate" href="mailto:sales@energotek.ru" data-aos="fade-zoom-in" data-aos-easing="ease-in-out" data-aos-duration="1000" data-aos-delay="2550">sales@energotek.ru</a>
       </div>
-      <main class="content">
-        <h2 class="visually-hidden">Форма для расчета</h2>
+      <a class="header__email-mobile" href="mailto:sales@energotek.ru">
+        <svg width="24" height="20" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1.51954 1C1.2359 1.03272 0.99828 1.32038 1.00001 1.61819V14.4008C1.00465 14.7133 1.27479 14.995 1.57423 15H21.4258C21.7252 14.9948 21.9954 14.7133 22 14.4008V1.61819C22 1.30249 21.7282 1.00511 21.4258 1H1.51954ZM2.68621 2.22688H20.3138L11.5091 8.50406L2.68621 2.22688ZM2.15756 3.38721L11.1172 9.79753C11.3299 9.98176 11.6702 9.98176 11.8828 9.79753L20.8424 3.38721V13.7921H2.15756V3.38721Z" fill="#201D2A" stroke="#201D2A" stroke-width="0.5"></path>
+        </svg> </a>
 
-        <nav class="content__nav">
+      <!-- <button class="header__hamburger hamburger hamburger--dark hamburger--emphatic" type="button">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button> -->
+    </div>
+  </header>
 
-          <button class="content__calc-all" title="Выполнить расчет">
-            <svg width="35" height="49" class="content__calc-icon">
-              <title>Выполнить расчет</title>
-              <use xlink:href="./img/svg/sprite.svg#svg--calc"></use>
-            </svg>
-            <span>Выполнить расчет</span>
-          </button>
+  <section class="prog">
+    <div class="app-wraper">
+      <div class="prog-wrapper">
+        <div class="wrapper--unity page__left-panel">
+          <section class="prog-header">
+            <button class="prog-header__logo" id="mainButton" onclick="changeScreen(event)">
+              <span>Программа</span>
+              <span>ЭКРАН</span>
 
-          <ul class="content__list">
-            <li class="content__item">
-              <button class="content__button"></button>
-              <svg width="35" height="49" class="content__icon content__icon--save">
-                <title>Сохранение</title>
-                <use xlink:href="./img/svg/sprite.svg#svg--save"></use>
-
-              </svg>
-              </>
-            </li><li class="content__item">
-              <button class="content__button"></button>
-              <svg width="35" height="49" class="content__icon content__icon--load">
-                <title>Загрузка</title>
-                <use xlink:href="./img/svg/sprite.svg#svg--load"></use>
-              </svg>
-            </li>
-            <li class="content__item">
-              <button class="content__button"></button>
-              <svg width="35" height="49" class="content__icon content__icon--print">
-                <title>Печать результатов</title>
-                <use xlink:href="./img/svg/sprite.svg#svg--print"></use>
-
-              </svg>
-            </li>
-          </ul>
-        </nav>
-        <div class="content__arrow content__arrow--prev">
-          <svg width="35" height="49" class="content__dir content__dir--prev">
-            <title>Предыдущая страница</title>
-            <use xlink:href="./img/svg/sprite.svg#svg--prev"></use>
-          </svg>
-        </div>
-        <div class="content__arrow content__arrow--next">
-          <svg width="35" height="49" class="content__dir content__dir--next">
-            <title>Следующая страница</title>
-            <use xlink:href="./img/svg/sprite.svg#svg--next"></use>
-          </svg>
-        </div>
-        <div class="content__wrapper">
-          <form id="calc-form" class="content__form form" method="GET" name="contact-form">
-
-            <button class="calc-form__clear" title="Очистить введенные данные">
-              <svg width="35" height="49" class="calc-form__basket">
-                <title>Очистить введенные данные</title>
-                <use xlink:href="./img/svg/sprite.svg#svg--recycling"></use>
-              </svg>
+              <!-- <span>Выбор оптимальной схемы заземления</span> -->
             </button>
+            <button class="prog-header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          </section>
 
-            <!-- КАБЕЛЬ -->
-            <div class="cable-screen">
-            <h2 class="calc-form__title">Кабель</h2>
-            <fieldset class="calc-form__block">
-              <legend class="calc-form__legend">Геометрия кабеля: </legend>
-
-              <li class="calc-form__item">
-                <label class="calc-form__label" for="Ukab">Номинальное напряжение кабельной линии:</label>
-                <div class="input-wrapper">
-                  <input type="text" id="Ukab" name="Ukab" size="2" class="calc-form__input--text" onchange="handleChange(this, 1, 250);" placeholder="0">
-                  <span class="calc-form__units">кВ</span>
+          <nav class="main-nav">
+            <ul class="main-nav__list main-nav__list--top">
+              <li class="main-nav__item main-nav__category">
+                <div class="main-nav__group">
+                  <svg width="27" height="35" class="main-nav__icon main-nav__icon--data">
+                    <title>Исходные данные</title>
+                    <use xlink:href="./img/svg/sprite.svg#svg--data"></use>
+                  </svg>
+                  <h3 class="main-nav__title">Исходные данные</h3>
+                  <div class="main-nav__arrow nav-arrow open">
+                    <span class="nav-arrow--left"></span>
+                    <span class="nav-arrow--right"></span>
+                  </div>
                 </div>
+                <ul class="main-nav__list main-nav__list--sub sub">
+                  <li class=" main-nav__item sub__item ">
+                    <button type="submit" class="sub__button button button--menu" id="menu11" onclick="changeScreen(event)">
+                      <span>01</span>
+                      <span>Сеть</span>
+                    </button>
+                  </li>
+                  <li class="main-nav__item sub__item sub__item--active">
+                    <button type="submit" class="sub__button button button--menu" id="menu12" onclick="changeScreen(event)">
+                      <span>02</span>
+                      <span>Кабель</span>
+                    </button>
+                  </li>
+                  <li class="main-nav__item sub__item">
+                    <button type="submit" class="sub__button button button--menu" id="menu13" onclick="changeScreen(event)">
+                      <span>03</span>
+                      <span>Трасса</span>
+                    </button>
+                  </li>
+                  <li class="main-nav__item sub__item">
+                    <button type="submit" class="sub__button button button--menu" id="menu14" onclick="changeScreen(event)">
+                      <span>04</span>
+                      <span>Настройки</span>
+                    </button>
+                  </li>
+                </ul>
+              </li>
+              <li class="main-nav__item main-nav__category">
+                <div class="main-nav__group">
+                  <svg width="35" height="49" class="main-nav__icon main-nav__icon--result">
+                    <title>Результаты расчетов</title>
+                    <use xlink:href="./img/svg/sprite.svg#svg--result"></use>
+                  </svg>
+                  <h3 class="main-nav__title">Результаты расчетов</h3>
+                  <div class="main-nav__arrow nav-arrow">
+                    <span class="nav-arrow--left"></span>
+                    <span class="nav-arrow--right"></span>
+                  </div>
+                </div>
+                <ul class="main-nav__list main-nav__list--sub sub close">
+                  <li class="main-nav__item sub__item">
+                    <button type="submit" class="sub__button button button--menu" id="menu21" onclick="changeScreen(event)">
+                      <span>01</span>
+                      <span>Двустороннее заземление</span>
+                    </button>
+                  </li>
+                  <li class="main-nav__item sub__item">
+                    <button type="submit" class="sub__button button button--menu" id="menu22" onclick="changeScreen(event)">
+                      <span>02</span>
+                      <span>Одностороннее заземление</span>
+
+                    </button>
+                  </li>
+                  <li class="main-nav__item sub__item">
+                    <button type="submit" class="sub__button button button--menu" id="menu23" onclick="changeScreen(event)">
+                      <span>03</span>
+                      <span>Идеальная транспозиция</span>
+                    </button>
+                  </li>
+                  <li class="main-nav__item sub__item">
+                    <button type="submit" class="sub__button button button--menu" id="menu24" onclick="changeScreen(event)">
+                      <span>04</span>
+                      <span>Неидеальная транспозиция</span>
+
+                    </button>
+                  </li>
+                  <li class="main-nav__item sub__item">
+                    <button type="submit" class="sub__button button button--menu" id="menu25" onclick="changeScreen(event)">
+                      <span>05</span>
+                      <span>Параметры кабельной линии</span>
+
+                    </button>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+
+            <ul class="main-nav__setting setting">
+              <li class="setting__item">
+                <button class="setting__button setting__button--set" id="setButton" onclick="changeScreen(event)">
+                <svg width="35" height="49" class="setting__icon setting__icon--set">
+                  <title>Настройки</title>
+                  <use xlink:href="./img/svg/sprite.svg#svg--setting"></use>
+
+                </svg>
+              </button>
+              </li>
+              <li class="setting__item">
+                <button class="setting__button setting__button--key" id="keyButton" onclick="changeScreen(event)"> 
+                <svg width="35" height="49" class="setting__icon setting__icon--key">
+                  <title>Активация</title>
+                  <use xlink:href="./img/svg/sprite.svg#svg--key"></use>
+
+                </svg>
+              </button>
 
               </li>
-              <hr>
-              <ul class="calc-form__list calc-form__list--inline">
-                <li class="calc-form__item calc-form__item--inline">
-                  <fieldset class="calc-form__block">
-                    <legend class="calc-form__legend">Параметры жилы: </legend>
-                    <ul class="calc-form__list calc-form__list">
-                      <li class="calc-form__item calc-form__item">
-                        <input type="radio" name="cable__MaterialG" id="cableCoreAl" class="visually-hidden calc-form__input--radio">
-                        <label for="cableCoreAl" class="calc-form__label calc-form__label--radio">
-                          Алюминий
-                        </label>
-                      </li>
-                      <li class="calc-form__item calc-form__item">
-                        <input type="radio" name="cable__MaterialG" id="cableCoreCu" class="visually-hidden calc-form__input--radio" checked="">
-                        <label for="cableCoreCu" class="calc-form__label calc-form__label--radio">
-                          Медь
-                        </label>
-                      </li>
-                      <li class="calc-form__item">
-                        <label class="calc-form__label" for="sechG">Сечение жилы F<sub>ж</sub>:</label>
-                        <div class="input-wrapper">
-                          <input type="text" id="sechG" name="sechG" size="2" class="calc-form__input--text" onchange="handleChange(this, 1, 3000);" autocomplete="off" placeholder="0">
-                          <span class="calc-form__units">мм<sup>2</sup></span>
-                        </div>
-                      </li>
-                    </ul>
-                  </fieldset>
-                </li>
-                <li class="calc-form__item calc-form__item--inline">
-                  <fieldset class="calc-form__block">
-                    <legend class="calc-form__legend">Параметры экрана: </legend>
-                    <ul class="calc-form__list calc-form__list">
-                      <li class="calc-form__item calc-form__item">
-                        <input type="radio" name="cable__MaterialE" id="cableEcranAl" class="visually-hidden calc-form__input--radio">
-                        <label for="cableEcranAl" class="calc-form__label calc-form__label--radio">
-                          Алюминий
-                        </label>
-                      </li>
-                      <li class="calc-form__item calc-form__item">
-                        <input type="radio" name="cable__MaterialE" id="cableEcranCu" class="visually-hidden calc-form__input--radio" checked="">
-                        <label for="cableEcranCu" class="calc-form__label calc-form__label--radio">
-                          Медь
-                        </label>
-                      </li>
-                      <li class="calc-form__item">
-                        <label class="calc-form__label" for="sechE">Сечение экрана F<sub>э</sub>:</label>
-                        <div class="input-wrapper">
-                          <input type="text" id="sechE" name="sechE" size="2" class="calc-form__input--text" onchange="handleChange(this, 1, 3000);" autocomplete="off" placeholder="0">
-                        <span class="calc-form__units">мм<sup>2</sup></span>
-                        </div>
-                        
-                      </li>
-                    </ul>
-                  </fieldset>
-                </li>
-              </ul>
-            </fieldset>
-
-
-            <fieldset class="calc-form__block">
-              <legend class="calc-form__legend">Дополнительные параметры: </legend>
-              <ul class="calc-form__list">
-                <li class="calc-form__item">
-                  <label class="calc-form__label" for="psi1">Коэффициент заполнения жилы:</label>
-                  <div class="input-wrapper">
-                    <input type="text" id="psi1" name="psi1" class="calc-form__input--text" size="2" value="0.9" onblur="if(isNaN(value)) value = '0.9'" onchange="handleChange(this, 0.01, 1);" autocomplete="off">
-                  <span class="calc-form__units"> о.е.</span>
-                  </div>
-                 
-                </li>
-                <li class="calc-form__item">
-                  <label class="calc-form__label" for="psi2">Коэффициент заполнения экрана:</label>
-                  <div class="input-wrapper">
-                    <input type="text" id="psi2" name="psi2" class="calc-form__input--text" size="2" value="0.5" onblur="if(isNaN(value)) value = '0.5'" onchange="handleChange(this, 0.01, 1);" autocomplete="off">
-                  <span class="calc-form__units"> о.е.</span>
-                  </div>
-                 
-                </li>
-                <hr>
-                <li class="calc-form__item">
-                  <label class="calc-form__label" for="kab_tj_unt_kz">Температура жилы в нормальном режиме:</label>
-                  <div class="input-wrapper">
-                    <input type="text" id="kab_tj_unt_kz" name="kab_tj_unt_kz" class="calc-form__input--text" size="2" value="90" onblur="if(value=='NaN') value = '90'" onfocus="if(value=='0') value = '0'" onchange="handleChange(this, 0, 500);" autocomplete="off">
-                  <span class="calc-form__units">&degC</span>
-                  </div>
-                 
-                </li>
-                <li class="calc-form__item">
-                  <label class="calc-form__label" for="kab_te_unt_kz">Температура экрана в нормальном режиме:</label>
-                  <div class="input-wrapper">
-                    <input type="text" id="kab_te_unt_kz" name="kab_te_unt_kz" class="calc-form__input--text" size="2" value="80" onblur="if(value=='NaN') value = '80'" onfocus="if(value=='0') value = '0'" onchange="handleChange(this, 0, 500);" autocomplete="off">
-                  <span class="calc-form__units">&degC</span>
-                  </div>
-                  
-                </li>
-                <hr>
-                <li class="calc-form__item">
-                  <label class="calc-form__label" for="d_elec1">Относительная диэлектрическая проницаемость изоляции:</label>
-                  <div class="input-wrapper">
-                    <input type="text" id="d_elec1" name="d_elec1" class="calc-form__input--text" size="2" value="2.5" onblur="if(isNaN(value)) value = '2.5'" onchange="handleChange(this, 1, 1000);" autocomplete="off">
-                  <span class="calc-form__units"> о.е.</span>
-                  </div>
-                 
-                </li>
-              </ul>
-
-            </fieldset>
-
-
-            <fieldset class="calc-form__block">
-              <legend class="calc-form__legend">Геометрия кабеля: </legend>
-
-              <ul class="calc-form__list calc-form__list--inline">
-                <li class="calc-form__item calc-form__item--inline">
-                  <input type="radio" name="cable__geometry" id="cableMath" class="visually-hidden calc-form__input--radio">
-                  <label for="cableMath" class="calc-form__label calc-form__label--radio">
-                    Расчетат
-                  </label>
-                </li>
-                <li class="calc-form__item calc-form__item--inline">
-                  <input type="radio" name="cable__geometry" id="cableInput" class="visually-hidden calc-form__input--radio" checked="">
-                  <label for="cableInput" class="calc-form__label calc-form__label--radio">
-                    Ввод
-                  </label>
-                </li>
-              </ul>
-              <button class="calc-form__button" type="submit" id="cableCalcGeometry">Расчетать геометрию</button>
-              <ul class="calc-form__list">
-                <li class="calc-form__item">
-                  <label class="calc-form__label" for="d1">Диаметр по жиле:</label>
-                  <div class="input-wrapper">
-                    <input type="text" id="d1" name="d1" size="2" class="calc-form__input--text" onchange="handleChange(this, 1, 250);" placeholder="0" disabled="">
-                  <span class="calc-form__units">мм.</span>
-                  </div>
-                  
-                </li>
-                <li class="calc-form__item">
-                  <label class="calc-form__label" for="d2">Диаметр по изоляции:</label>
-                  <div class="input-wrapper">
-                    <input type="text" id="d2" name="d2" size="2" class="calc-form__input--text" onchange="handleChange(this, 1, 250);" placeholder="0" disabled="">
-                  <span class="calc-form__units">мм.</span>
-                  </div>
-                  
-                </li>
-                <li class="calc-form__item">
-                  <label class="calc-form__label" for="d3">Диаметр по экрану:</label>
-                  <div class="input-wrapper">
-                    <input type="text" id="d3" name="d3" size="2" class="calc-form__input--text" onchange="handleChange(this, 1, 250);" placeholder="0" disabled="">
-                  <span class="calc-form__units">мм.</span>
-                  </div>
-                 
-                </li>
-                <li class="calc-form__item">
-                  <label class="calc-form__label" for="d4">Диаметр по оболочке:</label>
-                  <div class="input-wrapper">
-                    <input type="text" id="d4" name="d4" size="2" class="calc-form__input--text" onchange="handleChange(this, 1, 250);" placeholder="0" disabled="">
-                  <span class="calc-form__units">мм.</span>
-                  </div>
-                  
-                </li>
-              </ul>
-
-            </fieldset>
-
-          </div>
-          </form>
+            </ul>
+          </nav>
         </div>
-      </main>
+        <main class="content">
+          <h2 class="visually-hidden">Форма для расчета</h2>
+
+          <nav class="content__nav">
+
+            <div class="content__action">
+              <button class="content__calc-all" title="Выполнить расчет">
+                <svg width="35" height="49" class="content__calc-icon">
+                  <title>Выполнить расчет</title>
+                  <use xlink:href="./img/svg/sprite.svg#svg--calc"></use>
+                </svg>
+                <span>Выполнить расчет</span>
+              </button>
+
+              <button class="content__clear" title="Очистить введенные данные">
+                <svg width="35" height="49" class="content__basket">
+                  <title>Очистить введенные данные</title>
+                  <use xlink:href="./img/svg/sprite.svg#svg--recycling"></use>
+                </svg>
+              </button>
+            </div>
+            <ul class="content__list">
+              <li class="content__item">
+                <button class="content__button"></button>
+                <svg width="35" height="49" class="content__icon content__icon--save">
+                  <title>Сохранение</title>
+                  <use xlink:href="./img/svg/sprite.svg#svg--save"></use>
+
+                </svg>
+                </>
+              </li><li class="content__item">
+                <button class="content__button"></button>
+                <svg width="35" height="49" class="content__icon content__icon--load">
+                  <title>Загрузка</title>
+                  <use xlink:href="./img/svg/sprite.svg#svg--load"></use>
+                </svg>
+              </li>
+              <li class="content__item">
+                <button class="content__button"></button>
+                <svg width="35" height="49" class="content__icon content__icon--print">
+                  <title>Печать результатов</title>
+                  <use xlink:href="./img/svg/sprite.svg#svg--print"></use>
+
+                </svg>
+              </li>
+            </ul>
+          </nav>
+          <div class="content__arrow content__arrow--prev">
+            <svg width="35" height="49" class="content__dir content__dir--prev">
+              <title>Предыдущая страница</title>
+              <use xlink:href="./img/svg/sprite.svg#svg--prev"></use>
+            </svg>
+          </div>
+          <div class="content__arrow content__arrow--next">
+            <svg width="35" height="49" class="content__dir content__dir--next">
+              <title>Следующая страница</title>
+              <use xlink:href="./img/svg/sprite.svg#svg--next"></use>
+            </svg>
+          </div>
+          <div class="content__wrapper">
+            <form id="calc-form" class="content__form form" method="GET" name="contact-form">
+              <!-- Главный экран -->
+              <div class="main-screen calc-form__main-screen">
+                <div class="wrapper--unity">
+                <h2 class="calc-form__title">Программа "ЭКРАН"</h2>
+                <h3 class="calc-form__subtitile">Выбор оптимальной схемы заземления</h3>
+
+                <button class="calc-form__button" type="button" id="mainKeyButton" onclick="changeScreen(event)">Активация</button>
+
+                <button class="calc-form__button" type="submit" id="kod_take" name="kod_take" size="14" value="Получить" onclick="window.open('https://energotek.ru');" autocomplete="on">Получить код активации</button>
+                <button class="calc-form__button" type="submit" id="konsul" name="konsul" size="14" onblur="if(value=='NaN') value = ''" value="Запросить" onclick="window.open('http://mvdm.ru/');" autocomplete="on">Запросить консультацию разработчика</button>
+
+                <div class="calc-form__article">
+                  <p align="justify">Программа "ЭКРАН" предназначена для
+                    помощи в выборе оптимальной схемы
+                    заземления экранов кабельных линий
+                    номинального напряжения до 500 кВ,
+                    выполненных однофазными кабелями.</p>
+                  <p align="justify">После задания исходных данных программа
+                    вычисляет наведенные в экранах напряжения
+                    и токи промышленной частоты, а также
+                    вызванные ими потери активной мощности и
+                    их стоимость. Выбор оптимальной схемы
+                    заземления экранов делается пользователем
+                    по результатам сравнения полученных в
+                    расчетах значений с допустимыми.</p>
+                </div>
+                </div>
+              </div>
+              <!-- Активация -->
+              <div class="activation">
+                <div class="wrapper--unity">
+                <h2 class="calc-form__title ">Доступ</h2>
+                <li class="calc-form__item activation__item">
+                  <label class="calc-form__label" for="kod">Введите код активации:</label>
+                  <div class="input-wrapper">
+                    <input type="password" id="kod" name="kod" size="2" class="calc-form__input--text activation__input" value="*****************">
+                  </div>
+                </li>
+                <button class="calc-form__button activation__button" type="submit" id="activationBut">Активировать</button>
+                </div>
+              </div>
+              <!-- СЕТЬ -->
+              <div class="net-screen">
+                Здесь пока ничего нет
+              </div>
+              <!-- КАБЕЛЬ -->
+              <div class="cable-screen">
+                <h2 class="calc-form__title">Кабель</h2>
+                <fieldset class="calc-form__block">
+                  <legend class="calc-form__legend">Геометрия кабеля: </legend>
+
+                  <li class="calc-form__item">
+                    <label class="calc-form__label" for="Ukab">Номинальное напряжение кабельной линии:</label>
+                    <div class="input-wrapper">
+                      <input type="text" id="Ukab" name="Ukab" size="2" class="calc-form__input--text" onchange="handleChange(this, 1, 250);" placeholder="0">
+                      <span class="calc-form__units">кВ</span>
+                    </div>
+
+                  </li>
+                  <hr>
+                  <ul class="calc-form__list calc-form__list--inline">
+                    <li class="calc-form__item calc-form__item--inline">
+                      <fieldset class="calc-form__block">
+                        <legend class="calc-form__legend">Параметры жилы: </legend>
+                        <ul class="calc-form__list calc-form__list">
+                          <li class="calc-form__item calc-form__item">
+                            <input type="radio" name="cable__MaterialG" id="cableCoreAl" class="visually-hidden calc-form__input--radio">
+                            <label for="cableCoreAl" class="calc-form__label calc-form__label--radio">
+                              Алюминий
+                            </label>
+                          </li>
+                          <li class="calc-form__item calc-form__item">
+                            <input type="radio" name="cable__MaterialG" id="cableCoreCu" class="visually-hidden calc-form__input--radio" checked="">
+                            <label for="cableCoreCu" class="calc-form__label calc-form__label--radio">
+                              Медь
+                            </label>
+                          </li>
+                          <li class="calc-form__item">
+                            <label class="calc-form__label" for="sechG">Сечение жилы F<sub>ж</sub>:</label>
+                            <div class="input-wrapper">
+                              <input type="text" id="sechG" name="sechG" size="2" class="calc-form__input--text" onchange="handleChange(this, 1, 3000);" autocomplete="off" placeholder="0">
+                              <span class="calc-form__units">мм<sup>2</sup></span>
+                            </div>
+                          </li>
+                        </ul>
+                      </fieldset>
+                    </li>
+                    <li class="calc-form__item calc-form__item--inline">
+                      <fieldset class="calc-form__block">
+                        <legend class="calc-form__legend">Параметры экрана: </legend>
+                        <ul class="calc-form__list calc-form__list">
+                          <li class="calc-form__item calc-form__item">
+                            <input type="radio" name="cable__MaterialE" id="cableEcranAl" class="visually-hidden calc-form__input--radio">
+                            <label for="cableEcranAl" class="calc-form__label calc-form__label--radio">
+                              Алюминий
+                            </label>
+                          </li>
+                          <li class="calc-form__item calc-form__item">
+                            <input type="radio" name="cable__MaterialE" id="cableEcranCu" class="visually-hidden calc-form__input--radio" checked="">
+                            <label for="cableEcranCu" class="calc-form__label calc-form__label--radio">
+                              Медь
+                            </label>
+                          </li>
+                          <li class="calc-form__item">
+                            <label class="calc-form__label" for="sechE">Сечение экрана F<sub>э</sub>:</label>
+                            <div class="input-wrapper">
+                              <input type="text" id="sechE" name="sechE" size="2" class="calc-form__input--text" onchange="handleChange(this, 1, 3000);" autocomplete="off" placeholder="0">
+                              <span class="calc-form__units">мм<sup>2</sup></span>
+                            </div>
+
+                          </li>
+                        </ul>
+                      </fieldset>
+                    </li>
+                  </ul>
+                </fieldset>
+
+
+                <fieldset class="calc-form__block">
+                  <legend class="calc-form__legend">Дополнительные параметры: </legend>
+                  <ul class="calc-form__list">
+                    <li class="calc-form__item">
+                      <label class="calc-form__label" for="psi1">Коэффициент заполнения жилы:</label>
+                      <div class="input-wrapper">
+                        <input type="text" id="psi1" name="psi1" class="calc-form__input--text" size="2" value="0.9" onblur="if(isNaN(value)) value = '0.9'" onchange="handleChange(this, 0.01, 1);" autocomplete="off">
+                        <span class="calc-form__units"> о.е.</span>
+                      </div>
+
+                    </li>
+                    <li class="calc-form__item">
+                      <label class="calc-form__label" for="psi2">Коэффициент заполнения экрана:</label>
+                      <div class="input-wrapper">
+                        <input type="text" id="psi2" name="psi2" class="calc-form__input--text" size="2" value="0.5" onblur="if(isNaN(value)) value = '0.5'" onchange="handleChange(this, 0.01, 1);" autocomplete="off">
+                        <span class="calc-form__units"> о.е.</span>
+                      </div>
+
+                    </li>
+                    <hr>
+                    <li class="calc-form__item">
+                      <label class="calc-form__label" for="kab_tj_unt_kz">Температура жилы в нормальном режиме:</label>
+                      <div class="input-wrapper">
+                        <input type="text" id="kab_tj_unt_kz" name="kab_tj_unt_kz" class="calc-form__input--text" size="2" value="90" onblur="if(value=='NaN') value = '90'" onfocus="if(value=='0') value = '0'" onchange="handleChange(this, 0, 500);" autocomplete="off">
+                        <span class="calc-form__units">&degC</span>
+                      </div>
+
+                    </li>
+                    <li class="calc-form__item">
+                      <label class="calc-form__label" for="kab_te_unt_kz">Температура экрана в нормальном
+                        режиме:</label>
+                      <div class="input-wrapper">
+                        <input type="text" id="kab_te_unt_kz" name="kab_te_unt_kz" class="calc-form__input--text" size="2" value="80" onblur="if(value=='NaN') value = '80'" onfocus="if(value=='0') value = '0'" onchange="handleChange(this, 0, 500);" autocomplete="off">
+                        <span class="calc-form__units">&degC</span>
+                      </div>
+
+                    </li>
+                    <hr>
+                    <li class="calc-form__item">
+                      <label class="calc-form__label" for="d_elec1">Относительная диэлектрическая проницаемость
+                        изоляции:</label>
+                      <div class="input-wrapper">
+                        <input type="text" id="d_elec1" name="d_elec1" class="calc-form__input--text" size="2" value="2.5" onblur="if(isNaN(value)) value = '2.5'" onchange="handleChange(this, 1, 1000);" autocomplete="off">
+                        <span class="calc-form__units"> о.е.</span>
+                      </div>
+
+                    </li>
+                  </ul>
+
+                </fieldset>
+
+
+                <fieldset class="calc-form__block">
+                  <legend class="calc-form__legend">Геометрия кабеля: </legend>
+
+                  <ul class="calc-form__list calc-form__list--inline">
+                    <li class="calc-form__item calc-form__item--inline">
+                      <input type="radio" name="cable__geometry" id="cableMath" class="visually-hidden calc-form__input--radio">
+                      <label for="cableMath" class="calc-form__label calc-form__label--radio">
+                        Расчетат
+                      </label>
+                    </li>
+                    <li class="calc-form__item calc-form__item--inline">
+                      <input type="radio" name="cable__geometry" id="cableInput" class="visually-hidden calc-form__input--radio" checked="">
+                      <label for="cableInput" class="calc-form__label calc-form__label--radio">
+                        Ввод
+                      </label>
+                    </li>
+                  </ul>
+                  <button class="calc-form__button" type="submit" id="cableCalcGeometry">Расчетать геометрию</button>
+                  <ul class="calc-form__list">
+                    <li class="calc-form__item">
+                      <label class="calc-form__label" for="d1">Диаметр по жиле:</label>
+                      <div class="input-wrapper">
+                        <input type="text" id="d1" name="d1" size="2" class="calc-form__input--text" onchange="handleChange(this, 1, 250);" placeholder="0" disabled="">
+                        <span class="calc-form__units">мм.</span>
+                      </div>
+
+                    </li>
+                    <li class="calc-form__item">
+                      <label class="calc-form__label" for="d2">Диаметр по изоляции:</label>
+                      <div class="input-wrapper">
+                        <input type="text" id="d2" name="d2" size="2" class="calc-form__input--text" onchange="handleChange(this, 1, 250);" placeholder="0" disabled="">
+                        <span class="calc-form__units">мм.</span>
+                      </div>
+
+                    </li>
+                    <li class="calc-form__item">
+                      <label class="calc-form__label" for="d3">Диаметр по экрану:</label>
+                      <div class="input-wrapper">
+                        <input type="text" id="d3" name="d3" size="2" class="calc-form__input--text" onchange="handleChange(this, 1, 250);" placeholder="0" disabled="">
+                        <span class="calc-form__units">мм.</span>
+                      </div>
+
+                    </li>
+                    <li class="calc-form__item">
+                      <label class="calc-form__label" for="d4">Диаметр по оболочке:</label>
+                      <div class="input-wrapper">
+                        <input type="text" id="d4" name="d4" size="2" class="calc-form__input--text" onchange="handleChange(this, 1, 250);" placeholder="0" disabled="">
+                        <span class="calc-form__units">мм.</span>
+                      </div>
+
+                    </li>
+                  </ul>
+
+                </fieldset>
+
+              </div>
+
+              <!-- ТРАССА -->
+              <div class="track-screen">
+                Здесь пока ничего нет
+              </div>
+
+              <!-- НАСТРОЙКИ -->
+              <div class="setting-screen">
+                Здесь пока ничего нет
+              </div>
+              <!-- Двустороннее заземление -->
+              <div class="two-way-screen">
+                Здесь пока ничего нет
+              </div>
+              <!-- Одностороннее заземление -->
+              <div class="one-way-screen">
+                Здесь пока ничего нет
+              </div>
+              <!-- Идеальная транспозиция -->
+              <div class="ideal-screen">
+                Здесь пока ничего нет
+              </div>
+              <!-- Не идеальная транспозиция -->
+              <div class="not-ideal-screen">
+                Здесь пока ничего нет
+              </div>
+              <!-- Параметры кабельной линии -->
+              <div class="param-screen">
+                Здесь пока ничего нет
+              </div>
+              
+            </form>
+          </div>
+        </main>
+      </div>
     </div>
-  </div>
+  </section>
+  <!-- type="module" -->
   <script src="./js/all.min.js"></script>
 </body>
 
