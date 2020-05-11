@@ -1,24 +1,23 @@
 'use struct';
 
-var b = document.querySelector(".header");
 
-function E() {
-  window.pageYOffset > 0 ? (b.classList.add("header--sticky"),
-    !b.classList.contains("header--dark")) : (b.classList.remove("header--sticky"),
-    !b.classList.contains("header--dark"));
+//Убираем header с экрана при прокрутке страницы
+var header = document.querySelector(".header");
+
+function headerSticky() {
+  window.pageYOffset > 0 ? (header.classList.add("header--sticky"),
+    !header.classList.contains("header--dark")) : (header.classList.remove("header--sticky"),
+    !header.classList.contains("header--dark"));
 }
-window.addEventListener("scroll", E),
+window.addEventListener("scroll", headerSticky),
   window.addEventListener("scroll", function () {
-    "up" === window.pageYOffset > 0 ? b.classList.add("header--visible") : b.classList.remove("header--visible")
+    "up" === window.pageYOffset > 0 ? header.classList.add("header--visible") : header.classList.remove("header--visible")
   }),
-  window.addEventListener("load", E);
+  window.addEventListener("load", headerSticky);
 
 
-var iOS = navigator.userAgent.match(/iPhone|iPad|iPod/i);
-var event = "click";
-if (iOS != null)
-  event = "touchstart";
 
+//Определяем какие события использовать в зависимости от платформы
 let touchEvent = 'ontouchstart' in window ? 'touchstart' : 'click';
 
 var menuList = document.querySelectorAll(".main-nav__group");
